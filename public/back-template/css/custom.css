@@ -1,0 +1,85 @@
+.toast-custom {
+    top: 80px;
+    right: 0px;
+}
+
+.upload-profile{
+    position: relative;
+    float: left;
+    margin: -35px -5px 0 30px;
+    position: relative;
+    z-index: 1;
+}
+
+#profile{  
+  max-height:125px;
+  height:auto;
+  width:auto;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:5px;
+}
+.upload-profile img{
+    width: 125px;
+    border-radius: 50%;
+    border: 8px solid #DCDCDC;
+}
+
+.upload-profile .round{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #00B4FF;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.upload-profile .round input[type = "file"]{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+
+input[type=file]::-webkit-file-upload-button{
+    cursor: pointer;
+}
+
+
+#preview{  
+  max-width:300px;
+  height:auto;
+  width:auto;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:5px;
+}
+
+#img_container{
+  border-radius:5px;
+  width:auto;  
+}
+
+.imgInp{  
+  width:150px;
+  margin-top:10px;
+  padding:10px;
+  background-color:#d3d3d3;  
+}
+.loading{
+   animation:blinkingText ease 2.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }     
+    50%{   color: #transparent; }
+    99%{    color:transparent;  }
+    100%{ color:#000; }
+}
+.custom-file-label{
+  cursor:pointer;
+}
